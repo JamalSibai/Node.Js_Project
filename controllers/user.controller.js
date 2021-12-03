@@ -1,6 +1,7 @@
 const models = require("../models");
 const bcryptjs = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const validator = require("fastest-validator");
 
 function signUp(req, res) {
   const userInput = {
