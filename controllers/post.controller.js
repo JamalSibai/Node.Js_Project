@@ -157,6 +157,7 @@ function destroy(req, res) {
     .then((result) => {
       res.status(201).json({
         message: "post destroyed successfully",
+        id: req.userData,
       });
     })
     .catch((error) => {
